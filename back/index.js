@@ -7,7 +7,11 @@ dbConnect();
 
 // middleware routing body parse
 app.use(express.json());
-app.use("/api/contact",require("./routes/contacts"))
+app.use("/api/contact", require("./routes/contacts"))
+
+app.get("/", (req, res) => {
+  res.send("Hello World");
+});
 
 
 
