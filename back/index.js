@@ -10,7 +10,7 @@ app.use(express.json());
 app.use("/api/contact", require("./routes/contacts"))
 
 app.get("/", (req, res) => {
-  res.send("Hello World");
+  res.send("Hello Worldaaaaaaa");
 });
 
 

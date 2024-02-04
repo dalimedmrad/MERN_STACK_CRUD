@@ -13,7 +13,7 @@ services:
     networks: 
         - docker-workshop-network  # Connect the app service to the network
     volumes:
-      - ./:/app
+      - .:/app
 
   mongodb:  # Service named 'mongodb'
     container_name: mongodb  # Custom name for the mongodb container
